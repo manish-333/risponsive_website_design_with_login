@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body,html{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+         position: relative;
+            line-height: 1.6;
+            text-align: center;
+            opacity: 0.95;
+            background-image:radial-gradient(rgba(255, 0, 0, 0.555),rgb(80, 80, 149),rgb(85, 149, 85),rgb(173, 173, 86));
+        }
+        .navbar{
+    display: flex;
+    background-color: lightgray;
+    position: sticky;
+    top:0;
+}
+.navbar a{
+    color:black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: rgb(2, 9, 15);
+    color:white;
+}
+.container{
+   
+    width:60%;
+    height: 600px;
+   
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    top:100%;
+    margin-left: 20%;
+
+}
+.container h1{
+    color:white;
+    font-size: 40px;
+    font-weight: 700;
+   
+}
+form {
+   background-image: linear-gradient(red,green,pink);
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+@media (max-width:680px) {
+   .navbar,.container,form,input,label{
+flex-direction: column;
+   } 
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a ghref="#">About us</a>
+    </div>
+    
+
+    <div class="container">
+        <h1>Ragistration form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+   
+                   
+                
+          
+
+      
+
+</body>
+</html>
